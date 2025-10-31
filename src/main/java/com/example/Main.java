@@ -123,5 +123,30 @@ public class Main {
                 sumaArreglos += forArreglo[j];
         }
            System.out.println("La suma del arreglo es: " + sumaArreglos);
+
+           System.out.println("\n==== FOR-EACH ====");
+
+        System.out.println("\n== Suma con for-each ==");
+        int[] numerosArray = {4, 8, 15, 16, 23, 42};
+        int sumaForEach = 0;
+        for (int num : numerosArray) {
+            sumaForEach += num;
+        }
+        System.out.println("La suma del arreglo es: " + sumaForEach);
+
+        System.out.println("\n == Lista de palabras ==");
+        String[] palabras = {"Java", "Python", "JavaScript", "C++", "Ruby"};
+        for (String palabra : palabras) {
+            System.out.println("- " + palabra);
+        }
+
+        System.out.println("\n == Promedio de calificaciones ==");
+        double[] calificaciones = {5.0, 2.9, 3.0, 4.5, 1, 4.2};
+        double sumaCalificaciones = 0;
+        for (double calificacion : calificaciones) {
+            sumaCalificaciones += calificacion;
+        }
+        double promedio = sumaCalificaciones / calificaciones.length;
+        System.out.printf("El promedio es: %.2f\n", promedio);
     }
 }
