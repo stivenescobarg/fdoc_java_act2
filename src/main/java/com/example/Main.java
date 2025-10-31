@@ -148,5 +148,41 @@ public class Main {
         }
         double promedio = sumaCalificaciones / calificaciones.length;
         System.out.printf("El promedio es: %.2f\n", promedio);
+
+        System.out.println("\n ==== BREAK && CONTINUE ====");
+
+        System.out.println("\n == Break - For (Break al encontrar número mayor que 15)==");
+        for (int m = 1; m <= 20; m++) {
+            if (m > 15) {
+                System.out.println("Número mayor que 15 encontrado. Deteniendo ciclo.");
+                break;
+            }
+            System.out.print(m + "\n");
+        }
+        System.out.println();
+
+        System.out.println("\n == Continue para mostrar solo números pares ==");
+        for (int o = 1; o <= 10; o++) {
+            if (o % 2 != 0) {
+                continue;
+            }
+            System.out.print(o + "\n");
+        }
+        System.out.println();
+
+         System.out.println("\n == Combinación break y continue ==");
+        System.out.println("Procesando números (omite múltiplos de 3, se detiene al llegar a 25):");
+        for (int p = 1; p <= 30; p++) {
+            if (p > 25) {
+            System.out.println("Límite alcanzado en " + p);
+            break;
+            }
+            if (p % 3 == 0) {
+                continue;
+            }
+            System.out.print(p + " \n");
+        }
+        
+        System.out.println("\n\n=== TODOS LOS EJERCICIOS COMPLETADOS ===");
     }
 }
