@@ -98,5 +98,30 @@ public class Main {
         } while (!contraseñaIngresada.equals(contraseñaCorrecta));
         System.out.println("¡Contraseña correcta! Acceso concedido.");
         entrada.close();
+
+        System.out.println("\n==== FOR ====");
+
+        System.out.println("\n== Números Pares del 2 al 20 ==");
+        
+        for(int p = 2; p <= 20; p +=2){
+            System.out.println(p);
+        }
+
+        System.out.println("\n == FACTORIAL ==");
+        int numeroFactorial = 5;
+        long factorial = 1;
+        for (int k = 1; k <= numeroFactorial; k++) {
+            factorial *= k;
+        }
+        System.out.println("El factorial de " + numeroFactorial + " es: " + factorial);
+
+        System.out.println("\n== SUMA DE ARREGLO ==");
+        int [] forArreglo = {2, 4};
+        int sumaArreglos = 0;
+
+        for (int j = 0; j < forArreglo.length; j++) {
+                sumaArreglos += forArreglo[j];
+        }
+           System.out.println("La suma del arreglo es: " + sumaArreglos);
     }
 }
